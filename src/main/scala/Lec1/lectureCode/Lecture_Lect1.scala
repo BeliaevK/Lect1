@@ -2,12 +2,12 @@ package Lec1.lectureCode
 
 object HelloWorld {
   def main(args: Array[String]): Unit = {
-    println(1 + 3)
+    println(10 + 30)
   }
 }
 
 object HelloWorldWithApp extends App {
-  println(2 + 3)
+  println(2 - 30)
 }
 
 object TypesAndAllALL extends App {
@@ -16,20 +16,28 @@ object TypesAndAllALL extends App {
   x = 3 // не нада так делать
   // x1 = 3 // ce
 
-  val l1: Long = 1L
+  val iMax: Int = Int.MaxValue
+  val lMax: Long = Long.MaxValue
+  val lMin: Long = Long.MinValue
+  println(iMax)
+  println(lMax+1)
+  println(lMin)
 
   /**
    * doc
    */
-  val d1: Double = 1d
+  val d1: Double = Double.MaxValue
+  println(d1)
 
-  //str
+  //Однострочный комментарий
   val str = "abc"
 
   /*
-    aasda
+    Многострочный
+    комментарий
    */
-  val c = 'c'
+  val c = '\u2188'
+  println(c)
 
   val div = x / x1
 
@@ -38,7 +46,7 @@ object TypesAndAllALL extends App {
   val b: Boolean = x1 == x
 
   // можно использовать когда непонятно или не время реализовать сейчас, например
-  //  val n: Nothing = ???
+  //   val n: Nothing = ???
   //  val n1: Nothing = throw new Exception("")
 
   import java.lang.{Long => jLong}
@@ -107,7 +115,7 @@ object DefFun extends App {
     i
   }
   myPrint1("s", 1)
-  val x1: Int => Int = myPrint1("s", _)
+  val x1: Int => Int = myPrint1("s11", _)
   def myPrint2(str: String)(i: Int): Int = {
     println(i)
     println(str)
@@ -121,7 +129,8 @@ object DefFun extends App {
   val x3: Int => Int = i => i * 2
   val x4: Int => Int = _ * 2
 
-  x2.apply(1)
+  println(x2(2))
+  println(x2.apply(2))
 }
 
 object DefaultDefParam extends App {
@@ -133,8 +142,8 @@ object DefaultDefParam extends App {
   }
   myPrint1(
     d = 1d,
-    str = "1",
-    //i = 3
+    //i = 3,
+    str = "1"
   )
 
 
