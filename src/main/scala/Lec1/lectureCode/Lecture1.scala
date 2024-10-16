@@ -1,3 +1,5 @@
+package Lec1.lectureCode
+
 object HelloWorld {
   def main(args: Array[String]): Unit = {
     println(1 + 3)
@@ -134,4 +136,6 @@ object DefaultDefParam extends App {
     str = "1",
     //i = 3
   )
+
+
 }
