@@ -1,4 +1,5 @@
-package Lec4.homeWorkCode
+package Lec1.homeWorkCode
+
 import java.time.{LocalDate, LocalTime}
 
 

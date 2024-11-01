@@ -1,6 +1,4 @@
-package Lec2.lectureCode
-
-import scala.util.{Failure, Success, Try}
+package Lec1.lectureCode
 
 object IfElse extends App {
   // java:
@@ -201,8 +199,7 @@ object TryMe extends App {
 
 object BreakMe extends App {
 
-  import scala.util.control.Breaks.break
-  import scala.util.control.Breaks.breakable
+  import scala.util.control.Breaks.{break, breakable}
 
   val search = "peter piper picked a peck of pickled peppers"
 

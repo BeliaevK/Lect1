@@ -1,14 +1,14 @@
-package Lec3.homeWorkCode
+package Lec1.homeWorkCode
 
 object HomeWork_Lect3 extends App {
 
-  class Book (val name: String, val author: String, val yearOfPubl: Int){
+  class Book(val name: String, val author: String, val yearOfPubl: Int) {
     override def toString: String = s"Книга: $name, автор: $author, год издания: $yearOfPubl"
   }
 
   object Book {
-    def createBook (name: String, author: String, yearOfPubl: Int):Book = {
-      new Book(name,author,yearOfPubl)
+    def createBook(name: String, author: String, yearOfPubl: Int): Book = {
+      new Book(name, author, yearOfPubl)
     }
   }
 
@@ -16,12 +16,14 @@ object HomeWork_Lect3 extends App {
   println(b1)
   println("")
 
-   abstract class Figure {
+  abstract class Figure {
     def calcArea: Double
   }
 
-  case class Circle(radius:Int) extends Figure {
+  case class Circle(radius: Int) extends Figure {
+
     import scala.math.Pi
+
     override def calcArea: Double = {
       Pi * (radius * radius)
     }
@@ -37,6 +39,7 @@ object HomeWork_Lect3 extends App {
     override def calcArea: Double = {
       side * side
     }
+
   }
 
   val c1 = Circle(5)

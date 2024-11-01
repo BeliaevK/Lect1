@@ -1,4 +1,4 @@
-package Lec2.homeWorkCode
+package Lec1.homeWorkCode
 
 object EvenOddNum_Lect2 extends App {
   def evenOddNum = (i: Int) => if (i % 2 == 0) "Чётное" else "Нечётное"
