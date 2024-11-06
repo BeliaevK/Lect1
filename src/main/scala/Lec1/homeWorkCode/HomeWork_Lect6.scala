@@ -14,7 +14,7 @@ object HomeWork_Lect6 extends App {
 
 
   val a = 15
-  val b = 5
+  val b = 0
 
 
   val devisionOpt = Option(a).flatMap(i1 => Option(b).filter(_ > 0).map(i2 => i1 / i2))
