@@ -97,7 +97,7 @@ object DayOfTheWeekTrait extends App {
 
 object UniqValue extends App {
   val luniqInt = List(1, 2, 3, 4, 4, 5, 6, 6)
-  val luniqIntStr = List("12", "123", "1234", "123")
+  val luniqIntStr = List("Слово", "Слово2", "Слово", "Слово3")
 
   def uniqValue[T](list: List[T]): List[T] = {
     list.distinct
