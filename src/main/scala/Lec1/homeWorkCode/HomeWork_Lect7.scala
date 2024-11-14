@@ -113,7 +113,7 @@ object AverageValue extends App {
 
   def averageValue(list: List[Option[Int]]): Double = {
 
-    list.flatten.sum.toDouble / list.size
+    list.flatten.sum.toDouble / list.flatten.size
   }
 
   println(averageValue(l1))
