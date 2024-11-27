@@ -17,7 +17,7 @@ object HomeWork_Lect11 extends App {
 
   val listPerson = List[Person](Person("Вася", 10), Person("Петя", 9), Person("Федор", 9), Person("Артем", 80), Person("Ян", 30), Person("Артем", 8))
 
-  implicit val sortedByAge: Ordering[Person] = Ordering.by(person => person.age)
+  implicit val sortedByAge: Ordering[Person] = Ordering.by(person => -person.age)
 
   // Примеры сортировок по имени и полной сортировке
   //implicit val sortedByName: Ordering[Person] = Ordering.by(person => (person.name))
